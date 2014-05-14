@@ -1,12 +1,9 @@
 define([
-  'jquery',
-  'bootstrap'
-], function($) {
+  'bootstrap_select'
+], function() {
   console.log('Hello World!');
   console.log($);
-  console.log($().dropdown);
 
-  console.log($('.dropdown-toggle'));
-  $('.dropdown-toggle').dropdown();
-
+  console.log($('.b-selectpicker'));
+  $('.b-selectpicker').selectpicker();
 });
