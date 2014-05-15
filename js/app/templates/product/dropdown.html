@@ -1,0 +1,5 @@
+<select class="selectpick">
+  <% _.each(products, function(product){ %>
+    <option><%= product.get('name') %></option>
+  <% }) %>
+</select>
