@@ -11,15 +11,15 @@ define([
       this.options = opt || {};
     },
     render: function() {
+      console.log('ProductDropdownView: render()');
       this.$el.html(this.template({
         products: this.collection.models
       }));
 
-      this.$el.find('.selectpick').selectpicker();
-
+      this.$select = this.$el.find('select.selectpicker').selectpicker();
       return this;
     }
   });
-  // Our module now returns our view
+
   return ProductDropdownView;
 });

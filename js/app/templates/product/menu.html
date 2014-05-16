@@ -1,0 +1,3 @@
+<% _.each(products, function(product){ %>
+	<button class="btn" data-cid="<%= product.cid %>"><%= product.get('name') %></button>
+<%	}) %>
